@@ -1,2 +1,19 @@
-# -material-ai-agent
-Material AI Agent using MiMo大模型 to automate data processing, ML training and explainable analysis for alloy and oxygen carrier performance optimization.
+# Material AI Agent with MiMo
+
+基于小米MiMo大模型的材料科学研究自动化Agent，面向含能多主元合金与铁矿石氧载体体系，解决传统材料研发成本高、周期长、数据稀疏的痛点。
+
+##  核心功能
+- **数据自动清洗与标准化**：批量处理CSV/Excel实验数据，自动处理缺失值、异常点与单位不统一问题。
+- **物理引导特征工程**：结合材料先验知识生成30+物理描述符，通过遗传算法自动筛选关键影响因素。
+- **多模型对比训练**：自动生成SVR、随机森林、XGBoost等模型代码，完成训练、调优与性能对比。
+- **可解释性分析**：自动生成SHAP报告，量化各特征对目标性能的影响权重与作用方向。
+- **反向成分设计**：根据目标性能指标，自动生成满足约束条件的成分/工艺优化方案。
+
+##  应用场景
+已在两项课题研究中投入使用，日均调用MiMo接口约300-500万Token，实现了：
+- 含能多主元合金屈服强度预测，R² 0.928
+- 铁矿石氧载体燃烧效率预测，R² 0.931
+- 研发效率提升70%以上，辅助完成两篇学术论文的数据分析与实验设计。
+
+##  后续计划
+引入微观结构多模态数据与物理约束模型，优化与MATLAB、Origin的联动，实现从数据处理到论文撰写的全流程自动化。
